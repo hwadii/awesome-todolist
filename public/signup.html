@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="SigninApp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+    <script src="index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap@4.1.0/dist/css/bootstrap.min.css"
+    />
+    <title>Connexion</title>
+  </head>
+  <body>
+    <h1 class="text-bold text-center">Inscription</h1>
+    <div class="col-sm-6 col-lg-4 col-md-4 col-xl-3 m-auto">
+      <div class="card">
+        <div class="card-body" ng-controller="signinController">
+          <a href="/login" class="m-1">< Retour</a>
+          <form>
+            <div class="form-group">
+              <label for="loginForm">Identifiant</label>
+              <input
+                type="text"
+                placeholder="Identifiant"
+                class="form-control"
+                ng-model="credentials.username"
+                autofocus
+              />
+            </div>
+            <div class="form-group">
+              <label for="pwdForm">Mot de passe</label>
+              <input
+                type="password"
+                placeholder="Mot de passe"
+                class="form-control"
+                ng-model="credentials.password"
+              />
+            </div>
+            <div class="form-group">
+              <label for="pwdForm">Confirmer le mot de passe</label>
+              <input
+                type="password"
+                placeholder="Mot de passe"
+                class="form-control"
+                ng-model="confirmPassword"
+              />
+            </div>
+            <div class="text-center">
+              <button
+                type="submit"
+                class="btn btn-outline-secondary"
+                ng-click="signup()"
+              >
+                S'inscrire
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
