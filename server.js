@@ -6,8 +6,7 @@ const app = express();
 const path = require('path');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
-const url =
-  'mongodb+srv://wadii:balerionisbae@todolist-fq3ya.mongodb.net/todo?retryWrites=true';
+const url = process.env.MONGO_URL;
 const localurl = 'mongodb://localhost/todo';
 
 app.use(express.static(path.join(__dirname, '/public')));
