@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hajjiw/app-web-et-mobile.git"
+    "url": "git+https://github.com/hwadii/awesome-todolist.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hajjiw/app-web-et-mobile/issues"
+    "url": "https://github.com/hajjiw/awesome-todolist/issues"
   },
-  "homepage": "https://github.com/hajjiw/app-web-et-mobile#readme",
+  "homepage": "https://github.com/hajjiw/awesome-todolist#readme",
   "dependencies": {
     "bcrypt": "^3.0.5",
     "dotenv": "^7.0.0",
