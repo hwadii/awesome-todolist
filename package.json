@@ -4,7 +4,8 @@
   "description": "todo app",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js",
+    "debug": "nodemon server.js"
   },
   "repository": {
     "type": "git",
