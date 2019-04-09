@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const session = require('express-session');
 const mongoose = require('mongoose');
@@ -6,7 +7,7 @@ const app = express();
 const path = require('path');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
-const url = process.env.MONGO_URL;
+const url = process.env.MONGODB_URI;
 const localurl = 'mongodb://localhost/todo';
 
 app.use(express.static(path.join(__dirname, '/public')));
