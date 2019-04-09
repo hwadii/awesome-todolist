@@ -81,6 +81,6 @@ app
   })
   .post(routes.signup);
 
-app.listen(3001, () => {
+app.listen(process.env.PORT || 3001, () => {
   console.log('express started on 3001');
 });
